@@ -1,0 +1,141 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  text-align: center;
+}
+.form {
+  background-color: #dad9d9;
+  margin: 5px 0;
+  padding: 0 20px;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  width: 75%;
+  height: 50%;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.add {
+  outline: none;
+  border: none;
+  width: 20%;
+  height: 50%;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(121, 0, 0);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.add:hover {
+  background-color: rgb(184, 0, 0);
+}
+
+.tasks {
+  width: 100%;
+  background-color: #e2e1e1;
+  /* margin: 8px auto; */
+  text-align: center;
+  padding: 0 20px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.task{
+  flex-basis: 100%;
+  min-height: 50px;
+  background-color: #ecebeb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 5px;
+  padding: 0 10px
+}
+
+.task:hover{
+  background-color: #bdbdbd;
+}
+.task .title{
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+}
+.task .info{
+  padding: 10px;
+  text-align: center;
+  align-self: stretch;
+}
+
+.del{
+    background-color: red;
+    color: white;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.del:hover{
+    background-color: rgb(197, 0, 0);
+}
+
+.done{
+  background-color: chartreuse;
+  border: 5px solid chartreuse;
+}
+
+.done:hover{
+  background-color: rgb(0, 255, 13);
+}
+
+.deleteAll{
+  border: none;
+    background-color: red;
+    width: 103%;
+    height: 35px;
+    padding: 0 0px;
+    margin: 0px -3px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.deleteAll:hover{
+  background-color: rgb(196, 0, 0);
+  letter-spacing: 1.2px;
+}
